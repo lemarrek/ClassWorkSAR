@@ -3,29 +3,33 @@ package classwork;
 public abstract class Channel {
 	
 	/*
-	 * Entrée : 
-	 * Sortie : 
+	 * Entrée : tableau de bytes "bytes", entiers "offset", "length"
+	 * Sortie : Renvoie un entier 
+	 * 
 	 * 
 	 */
 	int read(byte[] bytes, int offset, int length);
 	
 	/*
-	 * Entrée : 
-	 * Sortie : 
+	 * Entrée : tableau de bytes "bytes", entiers "offset", "length"
+	 * Sortie : Renvoie un entier 
+	 * 
 	 * 
 	 */
 	int write(byte[] bytes, int offset, int length);
 	
 	/*
-	 * Entrée : 
-	 * Sortie : 
+	 * Entrée : Rien
+	 * Sortie : Rien
+	 * 
 	 * 
 	 */
 	void disconnect();
 	
 	/*
-	 * Entrée : 
-	 * Sortie : 
+	 * Entrée : Rien
+	 * Sortie : Rien
+	 * 
 	 * 
 	 */
 	boolean disconnected();
