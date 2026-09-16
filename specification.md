@@ -1,4 +1,4 @@
-# Spécification Technique : Canal de Communication (Channel)
+# Spécification Technique : Channel
 
 ## 1. Description Générale
 Le composant `Channel` agit comme un tuyau de communication entre les tâches du système. Il assure le transfert d'un flux de données brut (octets) de manière synchrone et sécurisée en environnement concurrent.
