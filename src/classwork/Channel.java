@@ -2,10 +2,18 @@ package classwork;
 
 public abstract class Channel {
 	
+	/** 
+	       [ Task A ] ---> [ Canal (Flux d'octets) ] --->  [ Task B ]
+		       |                  (Synchronisé)                 |
+		  Écriture (write)                               Lecture (read)
+		       | <---------------- Bidirectionnel ------------> |
+	*/
+	
 	/**
 	 * Reçoit un tableau bytes de longueur "length", et commence à y écrire 
 	 * les données lues depuis le canal à partir de l'indice "offset".
 	 * Cette méthode est bloquante si le canal est vide (attend des données).
+	 * 
 	 * @param bytes  le tableau de destination pour les données lues
 	 * @param offset l'indice de départ dans le tableau
 	 * @param length le nombre maximum de caractères (octets) à lire
@@ -33,8 +41,11 @@ public abstract class Channel {
 	/**
 	 * Se déconnecte du channel de communication dès qu'invoqué.
 	 * Réveille également les tâches qui seraient bloquées dans un read() ou write().
+	 * 
+	 * Finir de read tous les write effectués avant le disconnect
 	 */
 	void disconnect() {
+		
 	}
 	
 	/**
