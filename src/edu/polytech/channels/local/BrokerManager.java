@@ -17,6 +17,9 @@ public class BrokerManager {
     }
 
     public synchronized void addBroker(CBroker broker) {
+        if (brokers.containsKey(broker.getName())) {
+            throw new IllegalArgumentException("Broker already exists: " + broker.getName());
+        }
         brokers.put(broker.getName(), broker);
     }
 

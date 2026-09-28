@@ -6,7 +6,6 @@ import edu.polytech.channels.Task;
 
 public class Boot implements Bootstrap {
 
-    // Le singleton s'instancie proprement via getInstance() sans new explicite
     public Boot() {
         BrokerManager.getInstance();
     }
