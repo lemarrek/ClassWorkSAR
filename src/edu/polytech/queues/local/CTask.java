@@ -1,4 +1,4 @@
-package edu.polytech.utils;
+package edu.polytech.queues.local;
 
 import java.util.Iterator;
 import java.util.LinkedList;

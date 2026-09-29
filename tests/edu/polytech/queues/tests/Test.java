@@ -21,7 +21,7 @@ import java.lang.reflect.Constructor;
 import edu.polytech.queues.Bootstrap;
 import edu.polytech.queues.QueueBroker;
 import edu.polytech.queues.Task;
-import edu.polytech.utils.Executor;
+import edu.polytech.queues.local.Executor;
 
 /**
  * This test is a simple echo test based on a client-server architecture. The
